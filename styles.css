@@ -69,16 +69,63 @@ section {
   transition: transform 0.2s;
 }
 
-.card img {
+.card-img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: auto;
+  object-fit: cover; /* Puedes cambiar a 'contain' si quieres ver toda la imagen sin recortes */
+  display: block;
+  border-radius: 8px;
 }
+
 
 .card span {
   display: block;
   padding: 0.75rem;
   font-weight: bold;
+}
+
+.panoramas {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.panoramas h2 {
+  margin: 0 auto 30px;
+  font-size: 28px;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+
+.panoramas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.panorama-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.panorama-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.panorama-card h3 {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #444;
 }
 
 .mapa img {
